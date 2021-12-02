@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2? family= Raleway:wght@100 & display=swap");
+
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+/* -------------------------------------------HEAD----------------------------------------- */
+#logo {
+  margin: 1rem;
+  height: 3rem;
+}
+
+.logoNav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navSign {
+  display: flex;
+  margin: 1rem;
+}
+
+.nav {
+  margin-right: 2.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#signUp {
+  color: #0065fc;
+}
+
+#hostingBtn {
+  border-top: 0.5rem solid #0065fc;
+  padding-top: 0.8rem;
+  color: #0065fc;
+}
+
+#activityBtn:hover {
+  border-top: 0.5rem solid #0065fc;
+  padding-top: 0.8rem;
+  color: #0065fc;
+}
+
+/* ------------------------SEARCH------------------------------- */
+
+#searchMenu {
+  display: flex;
+  align-items: center;
+}
+
+.fas.fa-map-marker-alt {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.8rem;
+  width: 3rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border-right: none;
+  background-color: #f2f2f2;
+  margin-right: -0.5rem;
+}
+
+#searchInput {
+  height: 2.5rem;
+  border: solid 0.1rem #f2f2f2;
+}
+
+#searchBtn {
+  height: 2.8rem;
+  width: 7rem;
+  background-color: #0065fc;
+  color: white;
+  border: none;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+/* ------------------------FILTERS + INFO------------------------------- */
+
+#filters {
+  display: flex;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  border: solid 0.2rem #f2f2f2;
+  border-left: none;
+  border-radius: 3rem;
+  height: 3rem;
+  padding-right: 1rem;
+}
+
+.fas.fa-money-bill-wave,
+.fas.fa-child,
+.fas.fa-heart,
+.fas.fa-dog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 0.1rem #deebff;
+  min-height: 3rem;
+  min-width: 3rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+  background-color: #deebff;
+  color: #0065fc;
+}
+
+#info {
+  display: flex;
+  align-items: center;
+}
+
+.fas.fa-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 0.1rem #f2f2f2;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+  background-color: white;
+  color: #0065fc;
+}
+
+/* --------------------------------MOST POPULAR----------------------------*/
