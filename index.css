@@ -3,13 +3,14 @@
 body {
   font-family: "Raleway", sans-serif;
   margin: 0;
-  margin-left: 4rem;
-  margin-right: 4rem;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* -------------------------------------------HEAD----------------------------------------- */
 #logo {
-  margin: 1rem;
+  /* margin: 1rem; */
   height: 3rem;
 }
 
@@ -24,7 +25,7 @@ body {
 }
 
 .nav {
-  margin-right: 2.5rem;
+  margin-right: 5rem;
 }
 
 a {
@@ -81,12 +82,21 @@ a {
   border: none;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
+  cursor: pointer;
 }
 
 /* ------------------------FILTERS + INFO------------------------------- */
 
 #filters {
   display: flex;
+  align-items: center;
+}
+
+.filter:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+  background-color: #DEEBFF;
+  border-color: #f2f2f2;
 }
 
 .filter {
@@ -134,4 +144,127 @@ a {
   color: #0065fc;
 }
 
+/* --------------------------------Hosting in Marseille----------------------------*/
+
+#hotelsContent {
+  display: flex;
+  justify-content: space-around;
+}
+
+#hostingInMarseille {
+  background-color: #f2f2f2;
+  width: 70%;
+  height: 35rem;
+  border-radius: 1rem;
+  margin-right: 2rem;;
+}
+
+.title {
+  margin-left: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+#hotels {
+  display: grid;
+  grid-template-columns: repeat (3, 5rem);
+  grid-template-rows: repeat (2, 5rem);
+}
+
+.hotel {
+  background-color: white;
+  margin: 1rem;
+  border-radius: 1rem;
+  max-height: 15rem;
+  padding: 0.3rem;
+}
+
+.hotel:hover{
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.imgHotel {
+  height: 7rem;
+  object-fit: cover;
+  max-width: 100%;
+  width: 100%;
+  max-height: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+#aubergeLaCannebiere {
+  grid-column: 1 / 2;
+}
+
+#hotelDuPort {
+  grid-column: 2 / 3;
+}
+
+#hotelLesMouettes {
+  grid-column: 3 / 4;
+}
+
+.fas.fa-star, .far.fa-star {
+  color: #0065FC ;
+}
+
+.cardsContent {
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+  line-height: 0.2rem;
+}
+
 /* --------------------------------MOST POPULAR----------------------------*/
+
+#mostPopular {
+  background-color: #f2f2f2;
+  width: auto;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.PopularHotel {
+  display: flex;
+  background-color: white;
+  padding: 0.3rem;
+  margin: 2rem 1rem;
+  border-radius: 1rem;
+  max-height: 10rem;
+}
+
+.PopularHotel:hover{
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.imgPopularHotel {
+  height: 7rem;
+  object-fit: cover;
+  max-width: 30%;
+  width: 30%;
+  max-height: 100%;
+  border-radius: 1rem 0 0 1rem;
+}
+
+/* -----------------------MEDIA QUERIES---------------------- */
+
+@media all and (max-width: 1440px) {
+  body {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  #hotelsContent {
+    display: grid;
+  }
+  #mostPopular{
+    width: auto;
+    margin-bottom: 1rem;;
+  }
+  #hostingInMarseille {
+    grid-row: 2 / 3;
+    width: auto;
+  }
+}
