@@ -3,6 +3,10 @@
 body {
   font-family: "Raleway", sans-serif;
   margin: 0;
+}
+
+header,
+main {
   max-width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -95,7 +99,7 @@ a {
 .filter:hover {
   transform: scale(1.02);
   cursor: pointer;
-  background-color: #DEEBFF;
+  background-color: #deebff;
   border-color: #f2f2f2;
 }
 
@@ -156,7 +160,7 @@ a {
   width: 70%;
   height: 35rem;
   border-radius: 1rem;
-  margin-right: 2rem;;
+  margin-right: 2rem;
 }
 
 .title {
@@ -181,7 +185,7 @@ a {
   padding: 0.3rem;
 }
 
-.hotel:hover{
+.hotel:hover {
   transform: scale(1.02);
   cursor: pointer;
 }
@@ -207,8 +211,9 @@ a {
   grid-column: 3 / 4;
 }
 
-.fas.fa-star, .far.fa-star {
-  color: #0065FC ;
+.fas.fa-star,
+.far.fa-star {
+  color: #0065fc;
 }
 
 .cardsContent {
@@ -235,7 +240,7 @@ a {
   max-height: 10rem;
 }
 
-.PopularHotel:hover{
+.PopularHotel:hover {
   transform: scale(1.02);
   cursor: pointer;
 }
@@ -249,6 +254,100 @@ a {
   border-radius: 1rem 0 0 1rem;
 }
 
+/* -----------------------ACTIVITY IN MARSEILLE---------------------- */
+
+#activity {
+  display: grid;
+  column-gap: 2rem;
+  margin: 4rem 0;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;
+}
+
+.activityTitle {
+  grid-column: 1/-1;
+}
+
+.activityCard {
+  box-shadow: 0 0 20px #0000002e;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition-duration: 0.1s;
+}
+
+.activityCard:hover {
+  transform: scale(1.02);
+}
+
+.activityCardImg {
+  position: relative;
+  flex: 1;
+}
+
+.activityImg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.cardTitle {
+  margin: 1.2rem 1.5rem;
+}
+
+#vieuxPort {
+  grid-row: 2/7;
+  grid-column: 1/2;
+}
+
+#pomegues {
+  grid-column: 2/3;
+  grid-row: 2/5;
+}
+
+#frioul {
+  grid-column: 3/4;
+  grid-row: 2/7;
+}
+
+#calanques {
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+
+#notreDameDeLaGarde {
+  grid-column: 2/3;
+  grid-row: 6/7;
+}
+
+#longchamp {
+  grid-column: 4/5;
+  grid-row: 4/7;
+}
+
+/* -----------------------FOOTER----------------------------- */
+
+.footer {
+  display: flex;
+  background-color: #f2f2f2;
+  justify-content: space-around;
+}
+
+.footerContent {
+  padding: 2rem 2rem;
+}
+
+.footerLinks {
+  display: block;
+  margin: 1rem 0;
+}
+
+.footerLinks:hover {
+  text-decoration: underline;
+}
+
 /* -----------------------MEDIA QUERIES---------------------- */
 
 @media all and (max-width: 1440px) {
@@ -259,9 +358,9 @@ a {
   #hotelsContent {
     display: grid;
   }
-  #mostPopular{
+  #mostPopular {
     width: auto;
-    margin-bottom: 1rem;;
+    margin-bottom: 1rem;
   }
   #hostingInMarseille {
     grid-row: 2 / 3;
